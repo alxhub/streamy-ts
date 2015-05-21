@@ -1,0 +1,28 @@
+{
+  "name": "streamy-ts",
+  "version": "0.0.1",
+  "description": "streamy-dart ported to Typescript",
+  "main": "...",
+  "scripts": {
+    "test": "..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttowncompiled/streamy-ts.git"
+  },
+  "author": "ttowncompiled",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/ttowncompiled/streamy-ts/issues"
+  },
+  "homepage": "https://github.com/ttowncompiled/streamy-ts#readme",
+  "devDependencies": {
+    "angular": "angular/angular",
+    "gulp": "^3.8.11",
+    "karma": "^0.12.32",
+    "typescript": "alexeagle/TypeScript#error_is_class"
+  },
+  "dependencies": {
+    "rx": "^2.5.2"
+  }
+}
