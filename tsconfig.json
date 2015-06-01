@@ -9,6 +9,7 @@
         "rootDir": "./modules"
     },
     "files": [
-        "./modules/codegen/src/codegen.ts"
+        "./modules/codegen/src/schema.ts",
+        "./modules/test/src/test.ts"
     ]
 }
