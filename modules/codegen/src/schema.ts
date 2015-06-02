@@ -1,5 +1,3 @@
-/// <reference path="../../../typings/angular2/angular2.d.ts" />
-
 declare var require: Function;
 
 var angular = require('../../../node_modules/angular/modules/angular2/angular2');
