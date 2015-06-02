@@ -1,6 +1,8 @@
+/// <reference path="../../../typings/rx/rx.d.ts" />
+
 declare var require: Function;
 
-var angular = require('../../../node_modules/angular/modules/angular2/angular2');
+import * as Rx from 'rx';
 
 export interface Key {
   toString(): string;
@@ -80,12 +82,11 @@ class LocalDataStore {
     this.data[strKey] = new Entry(entity, version);
   }
 
-  lookup(key: Key): angular.Observable<Entry> {
+  lookup(key: Key): Rx.Observable<Entry> {
     var strKey = key.toString();
-    if (!this.data.hasOwnProperty(strkey)) {
+    if (!this.data.hasOwnProperty(strKey)) {
       return null;
     }
-
   }
 }
 

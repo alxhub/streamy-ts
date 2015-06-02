@@ -15,9 +15,9 @@ function exec(cmd, args, callback) {
 }
 
 gulp.task('build', function(done) {
-	exec('tsc', [], done);
+	exec('tsc', ['-t', 'ES5', '-m', 'commonjs'], done);
 });
 
-gulp.task('test', function(done) {
+gulp.task('test', ['build'], function(done) {
 	exec('mocha', ['dist/modules/test/src/test.js'], done);
 })
